@@ -53,4 +53,6 @@ output = CSV.generate do |csv|
   end
 end
 
-File.write('output.csv', output)
+outname = 'output' << index.to_s << '.csv'
+
+File.write(outname, output)
